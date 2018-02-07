@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Youtube comments extension",
+    "version": "0.0.1",
+    "description": "Mutates youtube comments",
+    "icons": { 
+        "48": "icon-48.png",
+        "128": "icon-128.png"
+     },  
+    "author": "Mariano Heller",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/*",
+                "http://www.youtube.com/*"
+            ],
+            "js": [ "content.js"]
+        }
+    ]
+}
